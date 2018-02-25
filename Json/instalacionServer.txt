@@ -1,0 +1,4 @@
+Instalar node.js
+poner la orden en el CMD -> npm install -g json-server 
+despues iniciarlo con json-server --watch BD.json (en la carpeta donde tengamos el JSON)
+

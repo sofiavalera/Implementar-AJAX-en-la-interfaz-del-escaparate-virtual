@@ -1,0 +1,16 @@
+{
+    "productos":[
+      {"id": 1, "nombre": "pintalabios rojo", "precio": 15.0, "inventario": 2,"marca":"stage"},
+      {"id": 2, "nombre": "pintalabios rosa", "precio": 10.99, "inventario": 10,"marca":"stage"},
+      {"id": 3, "nombre": "pintalabios frambuesa", "precio": 19.99, "inventario": 5,"marca":"stage"},
+      {"id": 4, "nombre": "mascara pestañas volumen", "precio": 20.99, "inventario": 5,"marca":"stage"},
+      {"id": 5, "nombre": "mascara pestañas largas", "precio": 20.99, "inventario": 2,"marca":"stage"},    
+      {"id": 6, "nombre": "mascara pestañas waterproof", "precio": 25.99, "inventario": 1,"marca":"stage"},
+      {"id": 7, "nombre": "mascara pestañas efecto postizas", "precio": 15.99, "inventario": 10,"marca":"stage"},
+      {"id": 8, "nombre": "paleta sombras claras", "precio": 17.99, "inventario": 10,"marca":"stage"}, 
+      {"id": 9, "nombre": "paleta sombras oscuras", "precio": 10.99, "inventario": 10,"marca":"stage"},
+      {"id": 10, "nombre": "corrector de ojeras", "precio": 25.99, "inventario": 3,"marca":"stage"}
+    ]
+
+}
+

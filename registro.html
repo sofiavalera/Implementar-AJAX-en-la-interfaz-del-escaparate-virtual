@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pilar Fernández Valcarcel</title>
+        <meta name="description" content="Maquillaje">
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/text.css"/>
+        <link rel="stylesheet" href="css/960_12_col.css"/>
+        <link rel="stylesheet" href="css/registro.css"/>
+        <link rel="icon" href="favicon.ico">
+    </head>
+    <body>
+        <!--Contenedor global de 12 columnas-->
+        <div class="container_12">
+        <header>
+            <!--Logo-->
+            <div class="fondo">
+            <div class="grid_7 prefix_1">
+                <div class="logo">
+                    <h1>Pilar Fernández Valcarcel</h1>
+                </div>    
+            </div>
+            <!--Search-->
+            <div class="grid_4">
+                <div class="search">
+                    <form action="#" id="buscar">
+                    <p>
+                       <input type="text" name="buscar" id="buscar" placeholder="Buscar productos" onkeyup="myFunction()"/>
+                       <input id="lupa" type="submit" class="lupa" value="." title="buscar" />   
+                    </p>
+                    </form>
+                </div>
+            </div>
+            <div class="clear"></div>    
+            </div>    
+        </header>
+        <nav> 
+            <div class="fondo">
+            <div class="grid_7 suffix_1 ">
+                <!--menu-->
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="menuDes"><a href="#">Tienda</a>
+                            <ul class="desplegable">
+                                <li><a href="#">Cara</a></li>
+                                <li><a href="#">Ojos</a></li>
+                                <li><a href="#">Labios</a></li>
+                            </ul>
+                        </li>    
+                        <li><a href="#">A domicilio</a></li>
+                        <li><a href="#">Galeria</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid_3">
+                <!--Login/registro-->
+                <div class="enlaces">
+                    <a href="#">Ayuda |</a>        
+                    <a href="logIn.html">Log in | </a>
+                    <a href="registro.html">Registro</a>
+                </div>
+            </div>  
+            <div class="grid_1">
+                <!--carritoCompra-->
+                <div class="carrito">
+                     <a href="#" target="_blank"><img src="Img/carrito.png" alt="carro compra"></a>
+                </div>
+            </div>
+            <div class="clear"></div>
+            </div>
+        </nav>   
+        <section>
+            <!--Migaspan-->
+            <div class="fondoSeccion">
+                <div class="grid_3 suffix_9">
+                    <div class="migas">
+                        <ul class="migasPan">
+                            <li><a href="index.html">Home</a></li>
+                            <li> > </li>
+                            <li>Registro</li>
+                        </ul>
+                    </div>    
+                </div>
+                <!--FORMULARIO-->
+               <div class="clear"></div>
+               <div class="grid_8 suffix_2  prefix_2">
+                <form id="registro" name="registro" onsubmit="return comprobarDatos()">
+                    <div class="header">
+                        <h3>Registro</h3>
+                        <p>Rellena los datos de registro</p>
+                    </div>
+                    <div class="sep"></div>
+                    <div class="inputs">
+                        <label for="nombre">Nombre * <input type="text" required id="nombre" name="nombre" placeholder="Nombre" pattern="[a-z]{3,10}|[a-z]{3,10}\s[a-z]{3,10}" title="El nombre debe contener al menos 3 letras" onkeyup="minusculas()"></label>
+                        <label for="apellidos">Apellidos * <input type="text" required id="apellidos" name="apellidos" placeholder="Apellidos"  pattern="[a-z]{3,10}|[a-z]{3,10}\s[a-z]{3,10}" title="El apellido al menos 3 letras" onkeyup="minusculas()">
+                        </label>
+                        <br><br>
+                        <label for="contrasenia">Contraseña * <input type="password" required id="contrasenia" name="contrasenia" pattern="(?=.*[a-z]+)(?=.*[A-Z]+)(?=.*[0-9]+)(?=.*\W+)[A-Za-z0-9\W]{8,}" placeholder="Ej: Pilar99@"> Minimo 8 - minuscula - mayuscula - numero[0-9] - simbolo </label>
+                        <br><br>
+                        <label for="contrasenia2">Confirmacion contraseña * <input type="password" required id="contrasenia2" name="contrasenia2" pattern="(?=.*[a-z]+)(?=.*[A-Z]+)(?=.*[0-9]+)(?=.*\W+)[A-Za-z0-9\W]{8,}" placeholder="Contraseña"></label>
+                        <br><br>
+                        <label for="email">E-mail * <input type="email" required id="email" name="email" pattern=".+@.+[.].{2,3}" placeholder="Ej:sofia@gmail.com"></label>
+                        <br><br>
+                        <label for="sexo">Sexo
+                            <select id="sexo" type="sexo">
+                                <option value="femenino" selected>Femenino</option>
+                                <option value="masculino">Masculino</option>    
+                            </select>
+                        </label>
+                        <br><br>
+                        <label for="fecha">Fecha <input type="date" id="fecha" name="fecha" placeholder="fecha"></label>
+                        <br><br>
+                        <label for="direccion">Direccion <input type="text" id="direccion" name="direccion" placeholder="Direccion" onkeyup="mostrar()"></label>
+                        <br><br>
+                        <label for="pais" onclick="getJSON()">Pais
+                            <select id="pais" type="pais">
+                               <!--dom-->
+                            </select>
+                        </label>
+                        <br><br>
+                        <div id="oculto" style="display: none">
+                            <label for="numTarjeta">Numero tarjeta credito <input type="text" id="numTarjeta" name="numTarjeta" placeholder="Numero tarjeta de credito" pattern="\d{4}-\d{4}-\d{4}-\d{4}"> Formato: XXXX-XXXX-XXXX-XXXX</label>
+                        </div>
+                        <br>
+                        <div class="checkboxy">
+                            <label class="terms">Notificación de novedades<input name="cecky" id="checky" value="1" type="checkbox"></label>
+                        </div>
+                        <div class="checkboxy">
+                            <label class="terms">Recepción de la revista digital<input name="cecky2" id="checky2" value="1" type="checkbox" /></label>
+                        </div>  
+                        <input type="submit" value="Enviar" id="enviar" name="enviar">
+                    </div>
+                </form>
+                <!--FIN FORMULARIO-->
+                </div>
+                <div class="clear"></div>
+            </div>      
+        </section>
+        <footer>
+        <div id="fondoImagen">
+            <!--IconosRedesSociales-->
+                <div class="grid_2 prefix_5 suffix_5">
+                    <div class="sigueme">
+                        <p>Sigueme en</p>
+                    </div>    
+                </div>  
+                <div class="grid_4 prefix_4 suffix_4">  
+                    <div class="iconosRedes">
+                        <ul class="icon">
+                            <li>
+                                <a href="#" target="_blank"><img src="img/iconoInstagram.png" alt="instagram"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="img/iconoFacebook.png" alt="facebook"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="img/iconoPinterest.png" alt="pinterest"></a>
+                            </li>
+                        </ul>
+                    </div>    
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div id="fondoImagen2">
+            <div class="grid_8 prefix_2 suffix_2">
+                <!--Enlaces a los avisos legales-->
+                <div class="avisosLegales">
+                    <ul class="avisos">
+                        <li>
+                            <a href="#" target="_blank">LEGAL</a>
+                            <ul class="desplegable_avisos">
+                                <li><a href="#">Aviso Legal</a></li>
+                                <li><a href="#">Privacidad</a></li>
+                                <li><a href="#">Condiciones de uso &amp; venta</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                           <a href="#"  target="_blank">ACERCA DE</a>
+                             <ul class="desplegable_avisos">
+                                <li><a href="#">Contactar</a></li>
+                                <li><a href="#">Acerca de </a></li>
+                                <li><a href="#">Trabajar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"  target="_blank">PRODUCTOS</a>
+                            <ul class="desplegable_avisos">
+                                <li><a href="#">Pedidos/Devoluciones</a></li>
+                                <li><a href="#">Envio/Entrega</a></li>
+                                <li><a href="#">Productos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="grid_8 prefix_2 suffix_2">
+                <!--LineaSeparaxion-->
+                <div class="line">
+                    <img src="img/Line.png" alt="linea separacion">
+                </div>
+                <!--Copy con correo enlazado-->
+                <div class="copy">
+                    <a href="#"  target="_blank"><p>&copy;Pilarfernandezvalcarcel@gmail.com</p></a>
+                </div>
+                <!--Componente de geolocalizacion-->
+                <div class="geo">
+                    <a href="#" target="_blank"><img src="img/geo_icon.png" alt="geo"></a>  
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div id="barraaceptacion" style="display: block;">
+                <!--mensaje cookies-->
+                <div class="mensaje">
+                    Solicitamos su permiso para obtener datos de su navegación, en cumplimiento del Real Decreto-ley 13/2012. Si continúa navegando consideramos que acepta el uso de cookies.
+                    <a href="javascript:void(0);" class="ok" onclick="ok();"><b>OK</b></a> | 
+                    <a href="http://politicadecookies.com" target="_blank" class="info">Más información</a>
+                </div>    
+            </div>    
+            </div>    
+        </footer>
+        </div>
+        <!--importacion script JS-->
+        <script src="js/validar.js"></script>
+        <!--Libreria encriptar-->
+        <script src="js/encript.js"></script> 
+    </body>
+</html>

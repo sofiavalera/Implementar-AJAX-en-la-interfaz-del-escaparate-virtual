@@ -1,0 +1,87 @@
+@font-face{font-family:'freestyle script';src:local("?"),url("../fonts/freescript.ttf") format("truetype")}
+
+.logo{background-color:#000;font-family:"freestyle script";color:#fff;margin-left:2em;margin-top:1.5em}
+
+.logo h1{font-size:4em;font-weight:normal}
+
+.search{margin-top:3.5em;margin-left:2em}
+
+input.lupa{width:17px;height:17pxs;background-image:url("../Img/lupa.png");border:none;outline:none;cursor:pointer}
+
+input#buscar{border:solid 1px white;border-radius:5px}
+
+.menu{display:block}
+
+.menu a{width:9em;text-align:center;color:#fff;background-color:#000;float:right;font-family:inherit;text-decoration:none;margin-right:-2.5em;margin-bottom:0.7em;font-size:1.2em}
+
+.menu li{float:left}
+
+.menu ul{list-style-type:none}
+
+.menu li a:hover{opacity:0.5;cursor:pointer}
+
+.menuDes:hover > .desplegable{display:inline-grid}
+
+.desplegable li a{padding:10px 12px;display:block}
+
+.desplegable{display:none;position:absolute;min-width:140px;margin-top:2.5em}
+
+.desplegable li{position:relative;margin:-0.5em}
+
+.enlaces a{color:#fff;text-decoration:none;cursor:pointer}
+
+.enlaces{background-color:#000;margin-top:1.7em;text-align:center}
+
+.carrito{cursor:pointer;margin-top:0.5em}
+
+.fotoPrincipal{width:100%;height:100%}
+
+.productos:hover img{-webkit-transform:scale(0.8);-moz-transform:scale(0.8);transform:scale(0.8)}
+
+.productos img{-webkit-transition:all 0.9s ease;-moz-transition:all 0.9s ease;cursor:none;width:100%;height:100%}
+
+.productosDestacados{color:#fff;text-align:center;font-family:"freestyle script"}
+
+.productosDestacados h2{font-size:3.5em;margin-top:1em;margin-bottom:0.2em;font-weight:normal}
+
+.verTodos a img{text-align:center;margin-top:18%;margin-bottom:25%;margin-left:5%;width:90%;cursor:pointer}
+
+.sigueme p{font-family:"freestyle script";color:#fff;text-align:center;font-size:3.5em}
+
+.icon{list-style:none;display:flex;margin-bottom:10%;margin-top:-5%;width:300px;height:70px}
+
+.icon a img{-webkit-transition:all 0.9s ease;-moz-transition:all 0.9s ease;width:100%}
+
+.icon:hover a img{-webkit-transform:scale(1.25);-moz-transform:scale(1.25);transform:scale(1.25)}
+
+.avisosLegales ul li{color:#fff}
+
+.avisos{margin:0;padding:0;margin-top:2em;display:flex}
+
+.avisos li{display:block;float:left}
+
+.avisos li a{color:grey;text-align:center;font-family:inherit;text-decoration:none}
+
+.desplegable_avisos li a{font-family:"freestyle script";font-size:2em;font-weight:normal;color:#000}
+
+.desplegable_avisos li a:hover{text-decoration:underline}
+
+.desplegable_avisos{margin-left:-2.5em;width:10em;padding-right:9em}
+
+.copy a p{color:#000;font-family:"freestyle script";text-align:center;font-size:2em}
+
+.copy a p:hover{color:darkslateblue}
+
+.copy a{text-decoration:none}
+
+.line{margin-top:3em;margin-bottom:2em;margin-left:11em}
+
+.line img{width:70%}
+
+.geo a img{width:10%;margin-top:-18%;margin-right:100%}
+
+#fondoImagen{background-image:url("../Img/pinturas_pie.png");width:100%;height:100%}
+
+#fondoImagen2{background-image:url("../Img/fondo_pintura1.png");width:100%;height:100%}
+
+.fondo{background-color:#000;width:100%;height:100%}

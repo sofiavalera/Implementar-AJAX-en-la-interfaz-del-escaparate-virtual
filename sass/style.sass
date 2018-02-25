@@ -1,0 +1,367 @@
+/*---FUENTE-EXTERNA----*/
+@font-face
+    
+    font-family: 'freestyle script'
+    src: local("?"), url("../fonts/freescript.ttf") format("truetype")
+
+/*---VARIABLES--*/
+
+$fuente-externa: 'freestyle script'
+$color-negro: black
+$color-blanco: white
+$margen_izq: 2em
+$puntero: pointer
+$alineacion: center
+$nada: none
+$disposicion: block
+$anchura100: 100%
+$altura100: 100%
+
+/*---MIXINS---*/
+=transform($numero)
+    
+    -webkit-transform: scale($numero)
+    -moz-transform: scale($numero)
+    transform: scale($numero)
+
+
+/*---LOGO---*/
+.logo
+    
+    background-color: $color-negro
+    font-family: $fuente-externa
+    color: $color-blanco
+    margin-left: $margen_izq
+    margin-top: 1.5em
+
+.logo h1
+    
+    font-size: 4em
+    font-weight: normal
+    
+/*----BUSQUEDA---*/
+
+.search
+    
+    margin-top: 3.5em
+    margin-left: $margen-izq
+
+input.lupa
+    
+    width: 17px
+    height: 17pxs
+    background-image: url('../Img/lupa.png')
+    border: $nada
+    outline: $nada
+    cursor: $puntero
+
+input#buscar
+    
+    border: solid 1px white
+    border-radius: 5px
+
+/*---MENU---*/    
+.menu    
+    
+    display: $disposicion
+    
+.menu 
+    
+    a
+    
+        width: 9em
+        text-align: $alineacion
+        color: $color-blanco
+        background-color: $color-negro
+        float: right
+        font-family: inherit
+        text-decoration: $nada
+        margin-right: -2.5em
+        margin-bottom: 0.7em
+        font-size: 1.2em
+    
+.menu 
+    
+    li
+    
+        float: left
+            
+.menu 
+    
+    ul
+    
+        list-style-type: $nada
+    
+.menu li a:hover 
+    
+    opacity: 0.5
+    cursor: $puntero
+
+
+/*---MENU-DESPLEGABLE---*/
+.menuDes:hover > .desplegable
+        
+         display: inline-grid
+
+
+.desplegable 
+     
+        li
+            a
+
+                padding: 10px 12px
+                display: $disposicion
+            
+
+.desplegable
+    
+    display: $nada
+    position: absolute
+    min-width: 140px
+    margin-top: 2.5em
+    
+.desplegable
+    
+    li
+        position: relative
+        margin: -0.5em
+        
+/*------AYUDA/LOGIN/REGISTRO----*/
+.enlaces
+    
+    a
+        color: $color-blanco
+        text-decoration: $nada
+        cursor: $puntero
+.enlaces
+    
+    background-color: $color-negro
+    margin-top: 1.7em
+    text-align: $alineacion
+    
+/*----CARRITO-----*/
+.carrito
+    
+    cursor: $puntero
+    margin-top: 0.5em
+    
+/*------FOTO-PRINCIPAL------*/
+.fotoPrincipal
+    
+     width: $anchura100
+     height: $altura100
+
+/*--PRODUCTOS-DESTACADOS-IMAGEN--*/
+
+/*MIXINS*/
+    
+.productos:hover 
+    
+    img
+        +transform(0.8)
+               
+.productos 
+    
+    img
+    
+        -webkit-transition: all .9s ease /* Safari y Chrome */
+        -moz-transition: all .9s ease /* Firefox */
+        cursor: $nada
+        width: $anchura100
+        height: $altura100
+
+/*---PRODCUTOS-DESTACADOS-LETRAS----*/
+.productosDestacados
+    
+    color: $color-blanco
+    text-align: $alineacion
+    font-family: $fuente-externa
+    
+.productosDestacados
+    
+    h2
+       font-size: 3.5em
+       margin-top: 1em
+       margin-bottom: 0.2em
+       font-weight: normal
+    
+/*-----BOTON-VERTODOS---*/
+.verTodos 
+   
+    a 
+        img
+            
+            text-align: $alineacion
+            margin-top: 18%
+            margin-bottom: 25%
+            margin-left: 5%
+            width: 90%
+            cursor: $puntero
+            
+/*----SIGUEME EN----*/
+.sigueme
+    
+    p
+        font-family: $fuente-externa
+        color: $color-blanco
+        text-align: $alineacion
+        font-size: 3.5em
+
+/*----ICONOS-REDES-SOCIALES-----*/
+
+.icon
+    
+    list-style: $nada
+    display: flex  
+    margin-bottom: 10%
+    margin-top: -5%
+    width: 300px
+    height: 70px
+
+.icon 
+    
+    a 
+        img
+    
+            -webkit-transition: all .9s ease /* Safari y Chrome */
+            -moz-transition: all .9s ease /* Firefox */
+            width: $anchura100
+    
+/*MIXINS*/
+
+.icon:hover
+    
+    a
+        img
+            +transform(1.25)
+
+/*-----AVISOS-LEGALES-----*/
+.avisosLegales 
+    
+            ul 
+                li
+
+                    color: $color-blanco
+            
+
+.avisos
+    
+    margin: 0
+    padding: 0
+    margin-top: 2em
+    display: flex
+    
+.avisos 
+    
+    li
+        display: $disposicion
+        float: left
+    
+.avisos 
+    
+    li 
+        a 
+            color: grey
+            text-align: $alineacion
+            font-family: inherit;
+            text-decoration: $nada
+            
+/*---DESPLEGABLE-AVISOS-LEGALES---*/
+.desplegable_avisos
+    
+    li 
+        a
+            font-family: $fuente-externa
+            font-size: 2em
+            font-weight: normal
+            color: $color-negro
+            
+.desplegable_avisos
+    
+    li 
+        a:hover
+    
+            text-decoration: underline;
+ 
+.desplegable_avisos
+   
+    margin-left: -2.5em
+    width: 10em
+    padding-right: 9em
+    
+/*---COPYRiGHT---*/
+.copy 
+    
+    a 
+        p
+    
+            color: $color-negro
+            font-family: $fuente-externa
+            text-align: $alineacion
+            font-size: 2em
+                     
+.copy 
+    
+    a 
+        p:hover
+    
+            color: darkslateblue
+
+.copy 
+    
+    a
+    
+        text-decoration: $nada
+        
+/*----LINE---*/
+.line
+    
+    margin-top: 3em
+    margin-bottom: 2em
+    margin-left: 11em
+
+.line 
+    
+    img  
+    
+        width: 70%
+
+
+/*---GEOLOCALIZACION---*/
+.geo 
+    
+    a
+        img
+    
+            width: 10%
+            margin-top: -18%
+            margin-right: 100%
+
+/*----FONDOS----*/
+
+/*----FONDO-IMAGEN-PINTURAS----*/
+#fondoImagen
+    
+    background-image: url("../Img/pinturas_pie.png")
+    width: $anchura100
+    height: $altura100
+    
+/*----FONDO-IMAGEN-PINTURAS2----*/
+
+#fondoImagen2
+    
+    background-image: url("../Img/fondo_pintura1.png")
+    width: $anchura100
+    height: $altura100
+
+
+/*---FONDO-NEGRO---*/
+
+.fondo
+    
+    background-color: $color-negro
+    width: $anchura100
+    height: $altura100
+
+
+

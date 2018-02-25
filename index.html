@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pilar Fernández Valcarcel</title>
+    <meta name="description" content="Maquillaje">
+    <!--etiqueta para que sea adaptativa la pagina-->  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- estilos -->  
+    <link rel="stylesheet" href="css/main.css">
+     <!--<link rel="stylesheet" href="css_generado/style.css"/>-->
+    <link rel="stylesheet" href="css/carrusel.css"/>
+    <!--Efecto Scroll-->
+    <link rel="stylesheet" href="css/scroll.css"/>
+    <!--Importar Iconos-->
+    <!--<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css"/>-->
+    <link rel="stylesheet" href="fonts/web-fonts-with-css/css/fontawesome-all.css"/>
+    <!--Importar librerias JQuery-->
+    <script src="js/jquery-3.2.1.js"></script>
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body>
+    <!--Contenedor global de 12 columnas-->
+    <div class="container">
+        <header>
+                <!--Logo-->
+                <div class="fondo">
+                    <div class="row">
+                        <div class="col-xl-7 col-md-10 col-sm-10">
+                            <div class="logo">
+                                <h1>Pilar Fernández Valcarcel</h1>
+                            </div>    
+                        </div>
+                        <!--Search-->
+                        <div class="col-xl-5 col-md-12 col-sm-10 hidden-lg-down">
+                            <div class="search">
+                                <form action="#">
+                                <p>
+                                   <input placeholder="Buscar productos" type="search" name="buscar" id="search" class="form-control" />    
+                                </p>
+                                </form>
+                                 <table class="table table-striped table-bordered table-hover tablaSearch">
+                                    <thead>
+                                       <!-- <tr>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                        </tr> -->
+                                    </thead>
+                                    <tbody>
+                                        <!--Donde se muestran los productos-->    
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                   </div>    
+                </div>
+                <!--flecha-->
+             <div class="row">
+                <div class="col-xl-3 col-md-3 col-sm-3 hidden-xs-down">
+                    <span class="ir-arriba fa fa-arrow-up"></span>
+                 </div>
+            </div>
+            <nav>
+                <div class="fondo">
+                    <div class="row justify-content-around hidden-lg-down">
+                         <div class="col-lg-7 col-md-9 col-sm-12">
+                            <!--menu-->
+                            <div class="menu">
+                                <ul>
+                                    <li><a href="#">Inicio</a></li>
+                                    <li class="menuDes"><a href="#">Tienda</a>
+                                        <ul class="desplegable">
+                                            <li><a href="#">Cara<img src="Img/producto.png" alt="producto" class="caraProducto"></a></li>
+                                            <li><a href="#">Ojos<img src="Img/mascara.png" alt="mascara" class="caraProducto"></a></li>
+                                            <li><a href="#">Labios<img src="Img/pintalabios.png" alt="pintalabios" class="caraProducto"></a></li>
+                                        </ul>
+                                    </li>    
+                                    <li><a href="#">A domicilio</a></li>
+                                    <li><a href="#">Galeria</a></li>
+                                </ul>
+                            </div>    
+                        </div>
+                        <div class="col-lg-3 col-md-2 col-sm-1">
+                            <!--Login/registro-->
+                            <div class="enlaces">
+                                <a href="pdf/ESTUDIO%20DE%20LA%20USABILIDAD_ayuda.pdf" target="_blank">Ayuda |</a>        
+                                <a href="logIn.html">Inicio sesion <i class="fas fa-user-circle"></i> | </a>
+                                <a href="registro.html">Registro</a>
+                            </div>
+                        </div>  
+                        <div class="col-1">
+                            <!--carritoCompra-->
+                            <div class="carrito">
+                                 <a href="#" target="_blank"><img src="Img/carrito2.png" alt="carro compra"></a>
+                            </div>    
+                        </div>
+                    </div>    
+                </div>     
+            </nav>
+            <!--menu hamburguesa-->
+            <div class="pos-f-t colorMenu hidden-xl-up">
+              <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-inverse p-4 colorMenu carrito2">
+                    <div class="navbar-nav">
+                      <a class="nav-item nav-link active" href="index.html"> Inicio <span class="sr-only">(current)</span></a>
+                      <a class="nav-item nav-link" href="#">Tienda</a>
+                      <a class="nav-item nav-link menuDes" href="#">A domicilio</a>
+                      <a class="nav-item nav-link" href="#">Galeria</a>    
+                        <form action="#">
+                        <p>
+                           <input placeholder="Buscar productos" type="text" name="buscar" id="buscar" /> 
+                            <a href="#" target="_blank"><img src="Img/carrito2.png" alt="carro compra"></a>
+                        </p>
+                        </form>
+                    </div>
+                </div>
+              </div>
+              <nav class="navbar colorMenu">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <!--<span class="navbar-toggler-icon"></span>-->
+                <img src="Img/1.png" class="navbar-toggler-icon">
+                </button>
+                <a href="pdf/ESTUDIO%20DE%20LA%20USABILIDAD_ayuda.pdf" target="_blank">Ayuda |</a>        
+                <a href="logIn.html">Inicio sesion <i class="fas fa-user-circle"></i> | </a>
+                <a href="registro.html">Registro</a>
+              </nav>
+            </div>
+            <!--fin menu hamburguesa-->
+        </header> 
+        <section>
+            <div class="row justify-content-center">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                     <div class="slideshow">
+                        <ul class="slider">
+                            <li>
+                                <img src="Img/Carrusel/foto1.png" alt="1">
+                            </li>
+                            <li>
+                                <img src="Img/Carrusel/foto2.jpg" alt="2">
+                                <section class="caption">
+                                    <h1>Sesion 1 Vikingos</h1>
+                                </section>
+                            </li>
+                            <li>
+                                <img src="Img/Carrusel/foto3.jpg" alt="3">
+                                <section class="caption">
+                                    <h1>Sesion 2 Vikingos</h1>
+                                </section>
+                            </li>
+                            <li>
+                                <img src="Img/Carrusel/foto4.jpg" alt="4">
+                                <section class="caption">
+                                    <h1>Halloween</h1>
+                                </section>
+                            </li>
+                        </ul>
+                        <!--iconos circulo-->
+                        <ol class="circulos">
+                             <!--<li><span class="fa fa-circle"></span></li>
+                             <li><span class="fa fa-circle"></span></li>
+                             <li><span class="fa fa-circle"></span></li>
+                             <li><span class="fa fa-circle"></span></li>-->
+                        </ol>
+                        <!--iconos flechas-->
+                        <div class="left">
+                            <span class="fa fa-chevron-left"></span>
+                        </div>
+                        <div class="right">
+                            <span class="fa fa-chevron-right"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fondo">
+                <div class="row justify-content-around">
+                    <div class="col-10">
+                        <!--ImagenDeUnProductoDestacados-->
+                        <div class="productosDestacados">
+                            <h2>Productos destacados</h2>
+                        </div>
+                    </div> 
+                </div>  
+                <div class="row justify-content-center">
+                    <div class="col-5">
+                         <div class="productos">
+                            <img src="Img/maquillaje.jpg" class="rounded mx-auto d-block" alt="">
+                         </div>
+                    </div>
+                </div>    
+                <!--boton vertodos
+                <div class="row justify-content-center">
+                    <div class="col">
+                         <div class="verTodos2 ">                     
+                            <a href="verTodos.html"><img src="Img/BotonFrame2.png" alt="ver todos los productos" class="center-block"></a>
+                        </div>
+                    </div>
+                </div> -->
+                <!--boton ver todos responsive-->
+                 <div class="row justify-content-center">
+                    <div class="col-12">
+                        <!--BotonParaVerTodos-->   
+                        <div class="verTodos">  
+                            <a href="verTodos.html"><button type="button" class="btn btn-outline-secondary boton">VER TODOS</button></a>
+                        </div>    
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <!--opiniones clientes-->
+                        <div class="opiniones">
+                            <div class="sep"></div>
+                            <p>Opiniones de nuestros clientes <i class="fa fa-comments"></i></p>
+                            <div class="sep"></div>
+                        </div>
+                    </div> 
+                </div> 
+                <!--comentarios escritorio-->
+                <div class="row hidden-lg-down">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="container cf">
+                             <!-- comentario 1 -->
+                            <div class="animation-element slide-left testimonial">
+                              <div class="header">
+                                <div class="left">
+                                  <img src="Img/portada/cara1.png" alt="comentario1"/>
+                                </div>
+                              </div>
+                              <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="far fa-star"></i>
+                              </div>
+                              <div class="content"><i class="fa fa-quote-left"></i> ¡¡Me encanta este sitio web!! <i class="fa fa-quote-right"></i>
+                              </div>
+                            </div>
+                            <!--comentario 2-->
+                            <div class="animation-element slide-left testimonial">
+                              <div class="header">
+                                <div class="left">
+                                  <img src="Img/portada/cara2.jpg"  alt="comentario2"/>
+                                </div>
+                              </div>
+                             <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                              </div>
+                              <div class="content"><i class="fa fa-quote-left"></i> contrate sus servicios y me han fascinado! <i class="fa fa-quote-right"></i>
+                              </div>
+                            </div>
+                            <!--comentario 3 -->
+                            <div class="animation-element slide-left testimonial">
+                              <div class="header">
+                                <div class="left">
+                                  <img src="Img/portada/cara3.jpg" alt="comentario3"/>
+                                </div>
+                              </div>
+                              <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                              </div>
+                              <div class="content"><i class="fa fa-quote-left"></i> El maquillaje es una extension de la persona... <i class="fa fa-quote-right"></i>
+                              </div>
+                            </div>
+                            <!--comentario 4 -->
+                            <div class="animation-element slide-left testimonial">
+                              <div class="header">
+                                <div class="left">
+                                  <img src="Img/portada/cara4.jpg" alt="comentario4"/>
+                                </div>
+                              </div>
+                              <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                              </div>
+                              <div class="content"><i class="fa fa-quote-left"></i> Productos de maquillaje excelentes <i class="fa fa-quote-right"></i>
+                              </div>
+                            </div>
+                        </div>     
+                    </div>
+                </div>
+                <!--comentarios no disponibles-->
+                <div class="row hidden-xl-up noDisponible">
+                    <img src="Img/noDisponible.png" class="rounded mx-auto d-block" alt="no disponible">   
+                </div>
+            </div>    
+        </section>   
+        <footer>
+            <div id="fondoImagen">
+                 <!--IconosRedesSociales-->
+                <div class="row justify-content-around">
+                    <div class="col-12">
+                        <div class="sigueme">
+                            <p>Sigueme en</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-around">
+                    <div class="iconosRedes">
+                        <ul class="icon">
+                            <li class="icon1">
+                                <a href="#" target="_blank"><img src="Img/iconoInstagram.png" class="rounded mx-auto d-block" alt="instagram"></a>
+                            </li>
+                            <li class="icon2">
+                                <a href="#" target="_blank"><img src="Img/iconoFacebook.png" class="rounded mx-auto d-block" alt="facebook"></a>
+                            </li>
+                            <li class="icon3">
+                                <a href="#" target="_blank"><img src="Img/iconoPinterest.png" class="rounded mx-auto d-block" alt="Pinterest"></a>
+                            </li>
+                        </ul>
+                    </div>    
+                </div>    
+            </div>
+            <div id="fondoImagen2">
+                <div class="row justify-content-around hidden-md-down">
+                     <div class="col-lg-10 col-md-12 col-sm-10">
+                        <!--Enlaces a los avisos legales-->
+                        <div class="avisosLegales">
+                            <ul class="avisos">
+                                <li>
+                                    <a href="#" target="_blank">LEGAL</a>
+                                    <ul class="desplegable_avisos">
+                                        <li><a href="#">Aviso Legal</a></li>
+                                        <li><a href="#">Privacidad</a></li>
+                                        <li><a href="#">Condiciones de uso &amp; venta</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                   <a href="#"  target="_blank">ACERCA DE</a>
+                                     <ul class="desplegable_avisos">
+                                        <li><a href="#">Contactar</a></li>
+                                        <li><a href="#">Acerca de </a></li>
+                                        <li><a href="#">Trabajar</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"  target="_blank">PRODUCTOS</a>
+                                    <ul class="desplegable_avisos">
+                                        <li><a href="#">Pedidos/Devoluciones</a></li>
+                                        <li><a href="#">Envio/Entrega</a></li>
+                                        <li><a href="#">Productos</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--avisos legales movil-->
+                <div class="dropdown avisosPequenios hidden-lg-up">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+                        Avisos legales <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Legal</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Acerca de</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Productos</a></li>
+                    </ul>
+                </div> 
+                <!--fin avisos legales-->
+                <div class="row justify-content-around hidden-sm-down">
+                    <div class="col-lg-8 col-md-12 col-sm-12">
+                        <!--LineaSeparaxion-->
+                        <div class="line">
+                            <img src="img/Line.png" alt="linea separacion">
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center hidden-xs-down">
+                    <div class="col-xl-8 col-md-7 col-sm-7">
+                        <!--Copy con correo enlazado-->
+                        <div class="copy">
+                            <a href="#"  target="_blank"><p>&copy;Pilarfernandezvalcarcel@gmail.com</p></a>
+                        </div>
+                    </div>    
+                </div>
+                <div class="row justify-content-center hidden-sm-up">
+                    <div class="col-12">
+                        <!--Copy con correo enlazado-->
+                        <div class="copy2">
+                            <a href="#"  target="_blank"><p>&copy;Pilarfernandezvalcarcel</p></a>
+                        </div>
+                    </div>    
+                </div>
+                <div class="row justify-content-center hidden-sm-down">
+                    <div class="col-lg-8 col-md-12 col-sm-12">
+                         <!--Componente de geolocalizacion-->
+                        <div class="geo">
+                            <a href="#"  target="_blank"><img src="img/geo_icon.png" alt="geo"></a>
+                        </div>
+                    </div>    
+                </div>
+                <!--Aviso cookies-->
+                <div class="row justify-content-center hidden-lg-down">
+                    <div class="col-lg-12">
+                        <div id="barraaceptacion" style="display: block;">
+                            <div class="mensaje">
+                                Solicitamos su permiso para obtener datos de su navegación, en cumplimiento del Real Decreto-ley 13/2012. Si continúa navegando consideramos que acepta el uso de cookies.
+                                <a href="javascript:void(0);" class="ok" onclick="ok();"><b>OK</b></a> | 
+                                <a href="http://politicadecookies.com" target="_blank" class="info">Más información</a>
+                            </div>    
+                        </div>
+                    </div>
+                </div>    
+            </div>    
+        </footer>    
+    </div>    
+    <!--Importacion de scripts-->
+        <script src="js/carrusel.js"></script>
+        <script src="js/flecha.js"></script>
+        <script src="js/cookies.js"></script>
+        <script src="js/scroll.js"></script>  
+        <script src="js/pruebaSearch.js"></script>  
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
